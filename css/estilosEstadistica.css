@@ -1,0 +1,137 @@
+* {
+	font-family: "Open Sans",Arial;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans",Sans-serif;
+	font-size: 16px;
+	background: url('../imagenes/bg-textura.png') #fff;
+	color:#02161B;
+}
+
+ 
+header {
+	width:100%;
+}
+ 
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+ 
+header nav ul li span {
+	margin-right:20px;
+}
+ 
+header nav ul li a:hover {
+	background:#037E8C;
+}
+ 
+section {
+	padding:20px;
+}
+ 
+
+#contenido_estadistica{
+	width:90%;
+	max-width:1000px;
+	margin:10px auto;
+}
+
+#container_canvas{
+	width: 50%;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+#canvas{
+	width: 100%;
+	height: 100%;
+}
+.contenedor-center {
+	width: 40%;
+	padding:20px;
+overflow: hidden;
+}
+
+.formulario .boton-enviar{
+ 	display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       height:30px;
+float:right;
+}
+#cont_graf_circ{
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+@media screen and (max-width:800px ) {
+    header nav {
+		width:70%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+    .contenedor-center {
+    width: 100%;
+    }
+}
+						

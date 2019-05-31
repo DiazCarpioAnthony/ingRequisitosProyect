@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: rgba(234, 236, 238 ,.6);
+	background-size:cover;
+	background-attachment: fixed;
+}
+header {
+	/*background: #ccc  url('../imagenes/v.webm');*/
+    background-attachment: fixed;
+	overflow: hidden;
+	height: 700px;
+}
+header .logo{
+	float: left;
+	margin:20px 40px; 
+}
+.logo-xs{
+	display: none;
+}
+.titulo-xs{
+	display: none;
+}
+
+header .menu{
+	display: block;
+	float: right;
+}
+header nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	margin:25px;
+	margin-top: 40px;
+	padding-bottom: 5px;
+		font-size: 150%;
+}
+.contenedor {
+	width: 60%;
+	margin: auto; 
+	color: #fff;
+} 
+header .titulo {
+	font-family: Arial;
+	margin-top: 260px;
+	text-align: center;
+	font-size: 70px;
+}
+header nav a:hover{
+	border-bottom:2px solid #fff;
+}
+@media screen and (max-width:800px ){
+	header .logo{
+		display: none;
+	}
+	header .logo-xs{
+		display: block;
+		overflow: hidden;
+		margin-top: 20px;
+		width: 320px;
+		margin-left: 10px;
+	}
+	header .logo-xs img{
+		display: block;
+		width: 71px;
+		float: left;
+	}
+	header .titulo-xs{
+		display: block;
+		width: 235px;
+		font-size: 17px;
+		color: #fff;
+		float: right;
+		margin-top: 20px; 
+	}
+	
+	header nav a{
+		font-size: 150%;
+		margin:0px;
+		padding: 0px;
+		margin-top: 25px;
+		margin-right: 20px;
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	header .menu{
+		float: none;
+		padding-left: 2px;
+		text-align: center;
+	}
+	header .contenedor .titulo{
+		margin-top: 120px;
+		font-size: 60px;
+	}
+}
+@media screen and (max-width:400px ){
+	header .contenedor .titulo{
+		font-size: 50px;
+	}
+}
+
+/*----------------------------MAIN----------------------*/
+.main .descripcion{
+	background: #EBEDEF;
+	padding: 20px;
+	padding-bottom: 45px;
+	border: 1px solid rgba(0,0,0,.2);
+}
+.main .descripcion .titulo-descripcion{
+	color: #000;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.main .descripcion .divisoria{
+	color: #000;
+	text-align: center;
+    margin-bottom: 35px;
+}
+.main .descripcion .divisoria span{
+	margin: 0 28px;
+}
+
+.main .descripcion .p1,
+.main .descripcion .p2{
+    text-align: center;
+    color: #000;
+}
+
+.main .recomendaciones{
+	background: #D6DBDF    ;
+	padding: 40px;
+	color: #000;
+    overflow: hidden;
+	border: 1px solid rgba(0,0,0,.2);
+}
+.main .recomendaciones .titulo{
+	text-align: center;
+	font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.main .recomendaciones .disenado1{
+	float: left;
+	width: 40%;
+	padding: 10px;
+}
+.main .recomendaciones .disenado2{
+	float: right;
+	width: 40%;
+	padding: 10px;
+}
+.main .recomendaciones .laptop,
+.main .recomendaciones .mobile2{
+	display: block;
+	padding: 20px;
+    width: 90px;
+    height: 90px;
+	border-radius: 50%;
+	background: rgba(231, 76, 60 ,.9);
+	margin: auto;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.main .recomendaciones .icon-laptop,
+.main .recomendaciones .icon-mobile2{
+	font-size: 45px;
+	text-align: center;
+}
+.main .recomendaciones .disenado-titulo{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+.main .recomendaciones .disenado-texto{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+@media screen and (max-width:800px ){
+	
+	.main .descripcion .contenedor{
+		width: 80%;
+	}
+	.main .descripcion .divisoria span{
+		margin: 0;
+	}
+	.main .recomendaciones .disenado1,
+	.main .recomendaciones .disenado2{
+		width: 100%;
+	}
+}
+
+/*--------------------------FOOTER------------------*/
+footer {
+	padding: 30px;
+	overflow: hidden;
+	background: #2E4053 ;
+
+	color: #fff;
+}
+footer .autor{
+	float: left;
+	font-size: 18px;
+}
+footer .redes-sociales{
+	float: right;
+}
+footer .redes-sociales a{
+	text-decoration: none;
+	display: inline-block;
+	margin-right: 15px;
+	padding: 5px;
+
+	color: #fff;
+}
+footer .redes-sociales a:hover{
+	border-bottom:2px solid #fff;
+}
+
+@media screen and (max-width:800px ){
+	footer .redes-sociales{
+		float: right;
+		margin-top:15px;
+	}
+	footer .redes-sociales a{
+		text-align: center; 
+	}
+}

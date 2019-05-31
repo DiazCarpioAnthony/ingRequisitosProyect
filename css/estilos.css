@@ -1,0 +1,415 @@
+* {
+	font-family: "Open Sans",Arial;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: url('../imagenes/bg-textura.png') rgba(131, 145, 146 ,.1) ;
+	font-family: "Open Sans",Sans-serif;
+	font-size: 16px;
+}
+/*--------------------------HEADER-------------*/
+header {
+	width:100%;
+}
+ 
+header h1 {
+	margin: 40px 0;
+	font-size: 34px;
+	line-height: 34px;
+	font-weight: 800;
+	color: #323068;
+	text-align: center;
+}
+
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+ 
+header nav ul li span {
+	margin-right:20px;
+}
+ 
+header nav ul li a:hover {
+	background:#037E8C;
+}
+ 
+@media screen and (max-width:800px ) {
+	header nav {
+		width:70%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+
+}
+
+/*------------------------------MAIN--------------------*/
+.main {
+	background: url('../imagenes/bg-textura.png') #FBF2EF;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	overflow: hidden;
+}
+.main .gastos-ingresos {
+	width: 12%;
+}
+.main .transaccion-tabla {
+	width: 70%;
+}
+.main .mostrar-cuenta {
+	width: 15%;
+}
+
+.main .contenedor-left {
+	background: url('../imagenes/bg-textura.png') #FBF2EF;
+	box-shadow: 2px 5px 3px rgba(0,0,0,0.3);
+	padding: 30px 10px;
+	margin-top: 450px;
+	margin-left: 10px;
+}
+.main .contenedor-center{
+	background: #FAFAFA;
+	padding: 30px;
+}
+.main .contenedor-right {
+	background: #FBF2EF;
+	box-shadow: -2px 5px 3px rgba(0,0,0,0.3);
+	padding: 30px 10px;
+	margin-top: 300px;
+}
+
+@media screen and (max-width:800px ) {
+
+	.main .gastos-ingresos,
+	.main .mostrar-cuenta {
+		display: none;
+	}
+	.main .transaccion-tabla {
+		width: 100%;
+	}
+	.main .contenedor-right {
+		margin-left: -25px;
+	}
+}
+
+@media screen and (max-width:400px ) {
+
+	.main .gastos-ingresos,
+	.main .mostrar-cuenta {
+		display: none;
+	}
+	.main .transaccion-tabla {
+		width: 100%;
+	}
+	.main .contenedor-right {
+		margin-left: -25px;
+	}
+}
+/*--------------------------CONTENEDOR LEFT---------------------*/
+.main .gastos-ingresos .contenedor-left .gasto .titulo-gasto {
+	font-size: 25px;
+	line-height: 5px;
+	font-weight: 400;
+	color: #323068;
+	text-align: center;
+}
+.main .gastos-ingresos .contenedor-left .gasto .input-gasto,
+.main .gastos-ingresos .contenedor-left .ingreso .input-ingreso {
+	display: block;
+	width: 75%;
+	height: 45px;
+	margin: auto;
+	text-align: center;
+	color:#2A1097;
+	border-color: #fff;
+}
+.main .gastos-ingresos .contenedor-left .ingreso .titulo-ingreso {
+	font-size: 25px;
+	line-height: 5px;
+	font-weight: 400;
+	color: #323068;
+	text-align: center;
+}
+
+@media screen and (max-width:800px ) {
+	.main .gastos-ingresos .contenedor-left .gasto .titulo-gasto {
+		font-size: 15px;
+		line-height: 5px;
+		font-weight: 400;
+		color: #323068;
+		text-align: center;
+	}
+	.main .gastos-ingresos .contenedor-left .gasto .input-gasto,
+	.main .gastos-ingresos .contenedor-left .ingreso .input-ingreso {
+		display: block;
+		width: 80%;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+	}
+	.main .gastos-ingresos .contenedor-left .ingreso .titulo-ingreso {
+		font-size: 15px;
+		line-height: 5px;
+		font-weight: 400;
+		color: #323068;
+		text-align: center;
+	}
+}
+
+/*-------------------------------------------CONTENEDOR CENTER------------------------------------------*/
+/*--------------------------CONTENEDOR CENTER-UP---------------------*/
+.main .transaccion-tabla .transaccion .transaccion-pago{
+	overflow: hidden;
+	background: #FAFAFA;
+}
+.main .transaccion-tabla .transaccion .transaccion-pago .contenedor-center .contenedor-center-up .titulo-transaccion-pago{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #323068;
+	text-align: left;
+	display: block;
+	border-bottom: 2px solid rgba(131, 145, 146 ,.7);
+}
+.main .transaccion-tabla .transaccion .transaccion-pago .contenedor-center .contenedor-center-up .formulario .datos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.input-categoria {
+	display: block;
+	height: 32px;
+	padding: 5px;
+}
+.tcal{
+	display: block;
+	height: 32px;
+	padding: 5px;
+}
+.input-nota{
+	display: block;
+	height: 32px;
+	padding: 5px;
+}
+.input-costo{
+	display: block;
+	height: 32px;
+	padding: 5px;
+}
+.input-moneda{
+	display: block;
+	height: 32px;
+	padding: 5px;
+}
+.main .transaccion-tabla .transaccion .transaccion-pago .contenedor-center .contenedor-center-up .formulario .boton-enviar {
+	display: block;
+	padding: 8px 5px;
+	margin-top: 15px;
+	float: right;
+}
+/*--------------------------CONTENEDOR CENTER-CENTER---------------------*/
+.main .transaccion-tabla .transaccion .transaccion-ingreso{
+	overflow: hidden;
+	background: #FAFAFA;
+}
+.main .transaccion-tabla .transaccion .transaccion-ingreso .contenedor-center .contenedor-center-center .titulo-transaccion-ingreso{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 600;
+	color: #323068;
+	text-align: left;
+	display: block;
+	border-bottom: 2px solid rgba(131, 145, 146 ,.7);
+}
+.main .transaccion-tabla .transaccion .transaccion-ingreso .contenedor-center .contenedor-center-center .formulario .datos {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.main .transaccion-tabla .transaccion .transaccion-ingreso .contenedor-center .contenedor-center-center .formulario .boton-enviar {
+	display: block;
+	padding: 8px 5px;
+	margin-top: 15px;
+	float: right;
+}
+/*--------------------------CONTENEDOR CENTER-DOWN--------------------*/
+.main .tabla .contenedor-center .contenedor-center-down {
+	overflow: hidden;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .titulo-tabla{
+	font-size: 30px;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container {
+	overflow-x: auto;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tablaGastos{
+	min-width: 824px;
+    width: 100%;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container table {
+	background-color: white;
+	text-align:	center;	
+	border-collapse: collapse;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container th, td{
+	padding: 2%;
+}
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container thead{
+	background-color: #246355;
+	border-bottom: 5px solid #0F362D;
+	color: white;
+}
+
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container tr:nth-child(even){
+	background-color: #ddd;
+}
+
+.main .tabla .contenedor-center .contenedor-center-down .fomulario-tabla .tabla-container tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+.boton-borrar {
+	display: block;
+	width: 60px;
+}
+/*-----------------------------------CONTENEDOR RIGHT----------------------------*/
+.main .mostrar-cuenta .contenedor-right .saldo-inicial .titulo-saldo-inicial,
+.main .mostrar-cuenta .contenedor-right .total-gasto .titulo-total-gasto,
+.main .mostrar-cuenta .contenedor-right .total-ingreso .titulo-total-ingreso,
+.main .mostrar-cuenta .contenedor-right .monto-queda .titulo-monto-queda {
+	font-size: 22px;
+	line-height: 5px;
+	font-weight: 400;
+	color: #323068;
+	text-align: center;
+}
+.main .mostrar-cuenta .contenedor-right .monto-queda .titulo-monto-queda {
+	color:#CA0538 ;
+}
+
+.main .mostrar-cuenta .contenedor-right .saldo-inicial .input-saldo-inicial,
+.main .mostrar-cuenta .contenedor-right .total-gasto .input-total-gasto,
+.main .mostrar-cuenta .contenedor-right .total-ingreso .input-total-ingreso,
+.main .mostrar-cuenta .contenedor-right .monto-queda .input-monto-queda {
+	display: block;
+	width: 70%;
+	height: 45px;
+	margin: auto;
+	text-align: center;
+	color:#2A1097;
+	border-color: #fff;
+}
+.main .mostrar-cuenta .contenedor-right .monto-queda .input-monto-queda {
+	color: #CA0538 ;
+	border-color: #CA0538 ;
+}
+
+@media screen and (max-width:800px ) {
+	.main .mostrar-cuenta .contenedor-right .saldo-inicial .titulo-saldo-inicial,
+	.main .mostrar-cuenta .contenedor-right .total-gasto .titulo-total-gasto,
+	.main .mostrar-cuenta .contenedor-right .total-ingreso .titulo-total-ingreso,
+	.main .mostrar-cuenta .contenedor-right .monto-queda .titulo-monto-queda {
+		font-size: 15px;
+		line-height: 5px;
+		font-weight: 400;
+		color: #323068;
+		text-align: left;
+	}
+	.main .mostrar-cuenta .contenedor-right .saldo-inicial .input-saldo-inicial,
+	.main .mostrar-cuenta .contenedor-right .total-gasto .input-total-gasto,
+	.main .mostrar-cuenta .contenedor-right .total-ingreso .input-total-ingreso,
+	.main .mostrar-cuenta .contenedor-right .monto-queda .input-monto-queda {
+		display: block;
+		width: 70%;
+		height: 45px;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+/*-----------------------------------FOOTER------------------------------*/
+footer {
+	margin: 20px 0;
+	background: rgba(25,17,17, .1);
+	padding: 20px;
+	width: 100%;
+	color: #000;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+
+}
+
+footer .redes-sociales a {
+	color: #000;
+	display: inline-block;
+	text-decoration: underline;
+	margin-left: 20px;
+	padding-top: 15px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}

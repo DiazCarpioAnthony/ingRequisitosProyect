@@ -1,0 +1,173 @@
+* {
+	font-family: "Open Sans",Arial;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans",Sans-serif;
+	font-size: 16px;
+	background: url('../imagenes/bg-textura.png') #fff;
+	color:#02161B;
+}
+
+header {
+	width:100%;
+}
+ 
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+}
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+ 
+header nav ul li span {
+	margin-right:20px;
+}
+ 
+header nav ul li a:hover {
+	background:#037E8C;
+}
+
+/*----------------------------MAIN----------------------------*/
+.main .contenedor {
+	width: 60%;
+	padding:25px;	
+	border: 1px solid #000;
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.3);
+	background: transparent;
+	margin: 90px auto;
+	overflow: hidden;
+	margin-bottom: 180px;
+}
+.main .contenedor h3,select{
+	display: inline-block;
+}
+.main .contenedor-moneda{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.main .inputs{
+	display: inline-block;
+	float: right;
+}
+.main .inputs .btn-pdf,
+.main .inputs .btn-excel{
+	height: 40px;
+	border-radius: 12px;
+	background:#024959;
+	color:#fff;
+}
+.main .btn-pdf:hover,
+.main .btn-excel:hover{
+	background: rgba(118, 103, 144,.9);
+}
+.main .inputs .btn-excel{
+	margin-left: 10px;
+}
+
+@media screen and (max-width:800px ) {
+	.main .contenedor {
+		width: 90%;
+		margin: 90px auto;
+		margin-bottom: 280px;
+	}
+
+}
+@media screen and (max-width:400px ) {
+	.main .contenedor {
+		width: 90%;
+		margin: 90px auto;
+		margin-bottom: 280px;
+	}
+
+}
+
+/*-----------------------------------FOOTER------------------------------*/
+footer {
+	margin: 20px 0;
+	background: rgba(25,17,17, .1);
+	padding: 20px;
+	width: 100%;
+	color: #000;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	justify-content:space-between;
+
+}
+
+footer .redes-sociales a {
+	color: #000;
+	display: inline-block;
+	text-decoration: underline;
+	margin-left: 20px;
+	padding-top: 15px;
+}
+
+footer .redes-sociales a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:70%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+}

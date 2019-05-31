@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qlv2am');
+  src:  url('fonts/icomoon.eot?qlv2am#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qlv2am') format('truetype'),
+    url('fonts/icomoon.woff?qlv2am') format('woff'),
+    url('fonts/icomoon.svg?qlv2am#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quill:before {
+  content: "\e907";
+}
+.icon-diamonds:before {
+  content: "\e919";
+}
+.icon-file-text:before {
+  content: "\e922";
+}
+.icon-coin-dollar:before {
+  content: "\e93b";
+}
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-mobile2:before {
+  content: "\e959";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-rocket:before {
+  content: "\e9a5";
+}
+.icon-clipboard:before {
+  content: "\e9b8";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-cancel-circle:before {
+  content: "\ea0d";
+}
+.icon-table2:before {
+  content: "\ea71";
+}
